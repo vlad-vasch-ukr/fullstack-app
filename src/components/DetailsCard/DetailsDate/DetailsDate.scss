@@ -1,0 +1,82 @@
+.details-date {
+    display: flex;
+    margin-bottom: 35px;
+    justify-content: space-between;
+
+    &__start, &__end {
+        font-size: 18px;
+        display: flex;
+        position: relative;
+    }
+
+    &__end {
+        padding-right: 22px;
+    }
+
+    &__title {
+        font-weight: 500;
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    &__date {
+        cursor: pointer;
+        position: relative;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            transition: background-color .3s ease;
+            top: 100%;
+            left: 0;
+            position: absolute;
+        }
+
+        &:hover:before {
+            background-color: #fff;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            height: 15px;
+            width: 15px;
+            background-image: url($edit-icon);
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            top: -5px;
+            left: 108%;
+        }
+    }
+
+    &__daypicker {
+        position: absolute;
+        top: 135%;
+        left: 0;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: rgb(39, 36, 36);
+
+        .rdp {
+            margin: 0;
+
+            &-day_selected, &-day_selected:focus-visible {
+                background-color: $primary;
+                border: none;
+                outline: none;
+            }
+
+            &-button {
+                transition: background-color .3s ease;
+
+                &:not(.rdp-day_selected):hover {
+                    background-color: $gray!important;
+                }
+            }
+        }
+    }
+}

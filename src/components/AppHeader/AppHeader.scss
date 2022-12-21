@@ -1,0 +1,14 @@
+.app-header {
+  padding: 0 35px;
+  height: 60px;
+  background-color: $primary;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    font-size: 23px;
+    text-transform: uppercase;
+    font-family: $nerco-font;
+  }
+}

@@ -1,0 +1,15 @@
+.main-layout {
+  background-color: rgb(39, 36, 36);
+  min-height: 100vh;
+
+  main {
+    min-height: calc(100vh - 60px);
+    display: flex;
+  }
+
+  &__content {
+    padding: 25px;
+    flex-grow: 1;
+    position: relative;
+  }
+}

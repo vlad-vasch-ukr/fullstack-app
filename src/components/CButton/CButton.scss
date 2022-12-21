@@ -1,0 +1,56 @@
+.c-button {
+  display: flex;
+  background: transparent;
+  border: 1px solid $white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 5px 15px;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  font-weight: 300;
+  font-family: $main-font;
+  cursor: pointer;
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.5;
+  }
+
+  &.small {
+    padding: 3px 5px;
+  }
+
+  &.medium {
+    padding: 5px 15px;
+  }
+
+  &.large {
+    padding: 8px 25px;
+  }
+
+  &.error {
+    border-color: $error;
+  }
+
+  &.success {
+    border-color: $success;
+  }
+
+  &.primary {
+    border-color: $primary;
+  }
+
+  &.error.filled {
+    background-color: $error;
+  }
+
+  &.success.filled {
+    background-color: $success;
+  }
+
+  &.primary.filled {
+    background-color: $primary;
+  }
+}

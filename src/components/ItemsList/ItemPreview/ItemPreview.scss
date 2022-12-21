@@ -1,0 +1,77 @@
+.list-preview {
+    padding: 25px;
+    background-color: $gray;
+    border-radius: 10px;
+    cursor: pointer;
+    max-width: 300px;
+    width: 100%;
+    position: relative;
+
+    &__title {
+        margin: 0 0 15px 0;
+        text-align: center;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 18px;
+        font-weight: 500;
+        overflow: hidden;
+    }
+
+    &__container {
+        padding-left: 15px;
+    }
+
+    &__item {
+        height: 10px;
+        background-color: rgb(29, 27, 27);
+        border-radius: 4px;
+        position: relative;
+        
+        &:nth-child(odd) {
+            width: 75%;
+        }
+
+        &:nth-child(even) {
+            width: 65%;
+        }
+
+        &:not(:first-child) {
+            margin-top: 10px;
+        }
+
+        &::before {
+            content: '';
+            display: block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: rgb(29, 27, 27);
+            position: absolute;
+            top: 0;
+            left: -15px;
+        }
+    }
+
+    &__date {
+        margin-top: 15px;
+        text-align: end;
+    }
+
+    &__delete {
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        font-size: 0;
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAABWUlEQVRoge2aS07DMBBAn9OKE2QqUY6AUMWKReEocAzUXfmcpL0KAbEDLzhCu4hvQEFmgZD4Nmnqhqk0b+lMZvw0ViJlAoYuXKpET7CzyPPrzLnTCLsV4XMH004I4314TlE/S5EEYCFy5Zw7ryEB0I8wehG5SFU/WUe8yAzoZ84ND8ryblnsQ683zGIsgPkghL0U9ZN1BOgDVEkAHJbl7ed7UpBS5F9ZerS8yA1w3NJeqigGIZz8dXGbOhLXzuBFohdZP9EG625TR5ZiItowke/4PL/3Ij9ehquuN6WbKhHOHSVZb4gdLW2YiDZMRBsmog0T0YaJaMNEtGEi2jARbZiINkxEGyaijXQf6KDg9xnGquubw+YjLWIi2qgrMof3Qf8G9/KFR5GPafKsTnytp5aDaYRRFmPhRRpvriGTOkG1RDohjF9FiHBGwr8VKpgBk24Ily3VM5LyBsesW2NllLNjAAAAAElFTkSuQmCC');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+}

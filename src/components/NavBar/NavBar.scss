@@ -1,0 +1,22 @@
+.nav-bar {
+  min-width: 300px;
+  padding: 50px 35px;
+  background-color: $gray;
+
+  &__item {
+    a {
+      text-decoration: none;
+    }
+
+    span {
+      color: $text;
+      font-size: 19px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    & + & {
+      margin-top: 20px;
+    }
+  }
+}

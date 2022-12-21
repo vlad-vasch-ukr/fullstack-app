@@ -1,0 +1,11 @@
+.details-card {
+    max-width: 600px;
+    margin: 0 auto;
+
+    &__title {
+        text-align: center;
+        margin: 0 0 35px 0;
+        font-weight: 700;
+        font-size: $main-title;
+    }
+}
