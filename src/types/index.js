@@ -7,7 +7,7 @@ export const IListItem = {
 
 export const IList = {
   name: PropTypes.string,
-  list_items: PropTypes.arrayOf(IListItem),
+  list_items: PropTypes.arrayOf(PropTypes.shape(IListItem)),
   start_date: PropTypes.string,
   end_date: PropTypes.string,
   created: PropTypes.string,
