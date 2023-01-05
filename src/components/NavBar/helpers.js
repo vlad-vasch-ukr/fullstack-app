@@ -5,7 +5,7 @@ export const NAVBAR_ITEMS = [
     iconPath: '',
   },
   {
-    to: '/create-list',
+    to: '/lists/create',
     name: 'Create list',
     iconPath: '',
   },

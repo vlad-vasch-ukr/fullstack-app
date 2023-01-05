@@ -10,7 +10,7 @@ const DB_USERNAME = process.env.DB_USERNAME;
 const DB_PASSWORD = process.env.DB_PASSWORD;
 const PORT = process.env.PORT;
 const corsOptions = {
-  origin: 'http://localhost:3001',
+  origin: 'http://localhost:3000',
 };
 
 app.use(cors(corsOptions));
